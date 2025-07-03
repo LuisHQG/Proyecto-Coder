@@ -194,6 +194,32 @@ header{
   margin-bottom: 1rem;
 }
 
+/* Página contacto */
+.contacto{
+  margin: 2rem;
+}
+
+.sede{
+  margin: 1rem;
+}
+
+.sedes{
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.informacion_sedes{
+  padding: 0;
+  margin: 0;
+}
+
+.datos-contacto{
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer{
   background-color: #FFFFFF;
   display: flex;
@@ -249,6 +275,43 @@ footer p{
   
   .poco-nosotros img{
     width: 100%;
+  }
+
+  .img-legendarios{
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-legendarios img{
+    width: 80%;
+    height: auto;
+  }
+
+  .foto-mi div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto-mi img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .proximos-eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proximos-eventos img{
+    width: 80%;
+    height: auto;
+  }
+
+  .contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   footer{
