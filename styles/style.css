@@ -10,7 +10,9 @@ body{
   background-color: #020419;
   color: #FFFFFF;
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   /* font-size: 16px;  */
   font-family: "Zain", sans-serif;
 }
@@ -215,9 +217,6 @@ header{
 
 .datos-contacto{
   margin: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 footer{
@@ -225,6 +224,8 @@ footer{
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  margin-top: auto;
+
 }
 
 footer p{
@@ -258,6 +259,10 @@ footer p{
   .nav-menu{
     justify-content: space-between;
     padding: 0.8rem 0 0.8rem 0.8rem;
+  }
+
+  .nav-menu a {
+    font-size: 1rem;
   }
 
   .pastores-valle article{
@@ -309,9 +314,29 @@ footer p{
     height: auto;
   }
 
+  .container-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .contacto{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sede{
+    margin: 0 3rem 2rem 3rem;
+  }
+
+  .datos-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caja-info{
+    width: 20rem;
   }
 
   footer{
