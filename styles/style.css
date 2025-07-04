@@ -113,9 +113,9 @@ header{
   font-weight: 300;
 }
 
-.ps_damaris{
+.ps-damaris{
   width: 85%;
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-weight: 300;
 }
 
@@ -262,11 +262,16 @@ footer p{
   }
 
   .nav-menu a {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .pastores-valle article{
     flex-direction: row;
+    align-items: baseline;
+  }
+
+  .pastores{
+    margin: 1rem;
   }
 
   .nosotros article{
