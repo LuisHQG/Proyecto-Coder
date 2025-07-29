@@ -1,282 +1,240 @@
-*{
-    margin: 0;
-    padding: 0; /* Este comando me altera los item list*/
-    box-sizing:border-box ;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 
 body{
   background-color: #020419;
+  color: #FFFFFF;
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Zain", sans-serif;
 }
 
 img{
   max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  height: auto;
 }
 
-
 header{
-  /* position: fixed; */
-  /* margin-bottom: 10px; */
-  padding: 0.8em;
-  background-color: #FFFFFF; 
+  background-color: #FFFFFF;
   color: #020419;
-  font-family: "Zain", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  max-width: 100vw;
+  height: auto;
 }
 
 .logo-container{
-    display: flex;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700; 
 }
 
-.logo-container img {
-    width: 6em; /* Ajusta el tamaño de la imagen */
+.logo-container img{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 4rem;
 }
 
-.nav-menu{
-    list-style: none; /* Eliminar viñetas */
-    display: flex; /* Alinear elementos horizontalmente */
-    justify-content: space-around;
-    margin: 0;
-    padding: 0.8em;
-}
-
-.nav-menu a {
-    text-decoration: none; /* Eliminar subrayado */
-    color: #020419; 
-    padding: 10px 15px;
-}
-
-main{
-  margin: 0;
-  background-color: #020419;
-  color: white;
-  padding: 2em 3em;
-}
-
-main h1{
-  padding: 0 0 15px 0;
-  font-family: "Zain", sans-serif;
+.offcanvas-title{
   font-weight: 700;
-  font-style: normal;
-  font-size: 2.5em;
 }
 
-main p{
-  padding: 0 0 30px 0;
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+.offcanvas.offcanvas-end {
+    width: 50vw;
 }
+
+.offcanvas{
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.navbar{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    /* max-width: 1200px; */
+}
+
 
 .title-section{
-  width: 33em;
+  margin: 2rem;
+}
+
+.title-section h1{
+  font-size: 2rem;
+}
+
+.title-section p {
+  margin-top: 1rem;
+}
+
+.subtitulo{
+  margin-top: 0;
+  font-size: .8rem;
+  font-style: italic;
+  font-weight: 300;
 }
 
 .foto-principal{
-  width: 100%;
+  width:100%;
   display: flex;
-  justify-content: center; /* Limitamos el espacio de la imagen */
+  justify-content: center;
+  height: auto;
 }
 
 .foto-principal img{
-  width: 80%;
+  width: 70%;
 }
 
-
 .pastores-valle{
-  margin-top: 5rem;
+  margin-top: 2rem;
+  text-align: justify;
 }
 
 .pastores-valle h2{
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2em;
-  margin-bottom: 2rem; 
+  font-size: 2rem;
+  margin: 0 2rem; 
 }
 
 .pastores-valle article{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin: 0 2rem;
+  align-items: center;
 }
 
-.ps_candido{
-  margin-right:50px; 
-  font-family: "Zain", sans-serif;
+.ps-candido{
+  width: 85%;
+  margin-top: 1rem; 
   font-weight: 300;
-  font-style: normal;
 }
 
-.ps_damaris{
-  margin: auto;
-  font-family: "Zain", sans-serif;
+.ps-damaris{
+  width: 85%;
+  margin-top: 1rem;
   font-weight: 300;
-  font-style: normal;
+}
+
+.info-pastor{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.info-pastor_nombre{
+  margin: 0.5rem 0;
+}
+
+.info-pastor_descripcion{
+  margin: 0.2rem 0;
 }
 
 .nosotros{
-  margin-top: 5rem;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
 }
 
 .nosotros h2{
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2em;
-  margin-bottom: 2rem; 
+  margin: 2rem 2rem 1rem 2rem;
 }
 
 .nosotros img{
-  width: 34em;
+  width: 80%;
 }
 
 .nosotros article{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 } 
 
 .poco-nosotros{
-  margin-right: 3.5em;
-  margin-bottom: 3em;
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+  margin:0 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .poco-nosotros h4{
-  margin-top: 1em;
-}
-
-.sedes-list{
-    list-style-type: square; /* Eliminar viñetas */
-    padding: 20px; 
-}
-
-.subtitulo{
-    font-family: "Zain", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1em;
+  margin-top: 1rem;
 }
 
 .principal-pagina{
-  margin: 3em 5em;
-  font-size: 1.5em;
+  margin: 2rem;
 }
 
-.principal-pagina h2{
-  font-size: 2em;
-}
-
-.somoslegendarios{
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-}
-
-.somoslegendarios img{
-  margin-bottom: 1.5em;
-}
-.legendariomeaning{
-  margin-bottom: 1em;
-  color: orangered;
+.principal-pagina p{
+  margin: 1rem;
+  text-align: justify;
 }
 
 .proximos-eventos{
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 2rem;
 }
 
-.proximos-eventos img{
-  margin-top: 2em;
-  margin-bottom: 2em;
-  width: 40em;
+.proximos-eventos h2{
+  margin-bottom: 1rem;
+}
+
+.legendariomeaning{
+  color: orangered;
 }
 
 .foto-mi{
-  margin-top: 1rem; 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
+  margin: 2rem;
 }
 
-.foto-mi div{
-  margin-right: 1rem;
+.foto-mi img{
+  margin-bottom: 1rem;
 }
 
+/* Página contacto */
 .contacto{
-   font-family: "Zain", sans-serif;
-   /* display: flex;
-   justify-content: space-around;
-   flex-wrap: wrap; */
-}
-.sedes{
-  text-decoration: underline;
-  font-size: 2em;
-}
-
-.informacion_sedes{
-  font-weight: 300;
-  font-style: italic;
-  font-size: 1.5em;
-  padding: 0;
+  margin: 2rem;
 }
 
 .sede{
-  margin-bottom: 3em;
+  margin: 1rem;
 }
 
-.datos-contacto form{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.sedes{
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
 }
 
-.info{
-  margin-bottom: 1em;
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 1.5em;
+.informacion_sedes{
+  padding: 0;
+  margin: 0;
 }
 
-.caja-info{
-  height: 2em;
+.datos-contacto{
+  margin: 2rem;
 }
-
-
 
 footer{
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: space-around;
-    
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin-top: auto;
+
 }
 
 footer p{
-    color: #020419;
-    margin-left: 1rem;
+  color: #020419;
+  margin: 0 1rem 1rem 1rem;
+  text-align: center;
 }
 
 .redes{
@@ -287,30 +245,119 @@ footer p{
 }
 
 .redes img{
-  width: 30px;
+  width: 2rem;
   margin: 0.6em;
 }
 
+@media (min-width: 768px) {
+  html{
+    font-size: 24px;
+  }
 
+  .logo-container{
+    font-size: 0.7rem;
+    font-weight: 700; 
+  }
 
+  .nav-item a {
+    font-size: 0.7rem;
+  }
 
-/* Estilos de fuente*/
-/*
-.zain-regular {
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  .pastores-valle article{
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .pastores{
+    margin: 1rem;
+  }
+
+  .nosotros article{
+    flex-direction: row;
+    margin-right: 2rem;
+  }
+
+  .poco-nosotros{
+    margin:0 0.1rem 2rem 2rem;
+  }
+  
+  .poco-nosotros img{
+    width: 100%;
+  }
+
+  .img-legendarios{
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-legendarios img{
+    width: 80%;
+    height: auto;
+  }
+
+  .foto-mi div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foto-mi img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .proximos-eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proximos-eventos img{
+    width: 80%;
+    height: auto;
+  }
+
+  .container-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sede{
+    margin: 0 3rem 2rem 3rem;
+  }
+
+  .datos-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caja-info{
+    width: 20rem;
+  }
+
+  footer{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  footer p{
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+  
+  .redes img{
+    width: 1.5rem;
+  }
+
 }
 
-.zain-light-italic {
-  font-family: "Zain", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
 
-.zain-regular-italic {
-  font-family: "Zain", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-  */
+
+

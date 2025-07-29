@@ -1,12 +1,12 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,300;0,400;0,700;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,300;0,400;0,700;1,300&display=swap');
-
-body{
+body {
   background-color: #020419;
   color: #FFFFFF;
   width: 100%;
@@ -16,12 +16,12 @@ body{
   font-family: "Zain", sans-serif;
 }
 
-img{
-  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+img {
+  max-width: 100%;
   height: auto;
 }
 
-header{
+header {
   background-color: #FFFFFF;
   color: #020419;
   display: flex;
@@ -30,334 +30,276 @@ header{
   height: auto;
 }
 
-.logo-container{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-weight: 700; 
-}
-
-.logo-container img{
-  margin-bottom: 0;
-  padding-bottom: 0;
-  width: 4rem;
-}
-
-.offcanvas-title{
-  font-weight: 700;
-}
-
-.offcanvas.offcanvas-end {
-    width: 50vw;
-}
-
-.offcanvas{
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(5px);
-}
-
-.navbar{
-    width: 100%;
-    padding: 0.5rem 1rem;
-    /* max-width: 1200px; */
-}
-
-
-.title-section{
-  margin: 2rem;
-}
-
-.title-section h1{
-  font-size: 2rem;
-}
-
-.title-section p {
-  margin-top: 1rem;
-}
-
-.subtitulo{
-  margin-top: 0;
-  font-size: .8rem;
-  font-style: italic;
-  font-weight: 300;
-}
-
-.foto-principal{
-  width:100%;
-  display: flex;
-  justify-content: center;
-  height: auto;
-}
-
-.foto-principal img{
-  width: 70%;
-}
-
-.pastores-valle{
-  margin-top: 2rem;
-  text-align: justify;
-}
-
-.pastores-valle h2{
-  font-size: 2rem;
-  margin: 0 2rem; 
-}
-
-.pastores-valle article{
-  display: flex;
-  flex-direction: column;
-  margin: 0 2rem;
-  align-items: center;
-}
-
-.ps-candido{
-  width: 85%;
-  margin-top: 1rem; 
-  font-weight: 300;
-}
-
-.ps-damaris{
-  width: 85%;
-  margin-top: 1rem;
-  font-weight: 300;
-}
-
-.info-pastor{
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
-.info-pastor_nombre{
-  margin: 0.5rem 0;
-}
-
-.info-pastor_descripcion{
-  margin: 0.2rem 0;
-}
-
-.nosotros{
-  width:100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: auto;
-}
-
-.nosotros h2{
-  margin: 2rem 2rem 1rem 2rem;
-}
-
-.nosotros img{
-  width: 80%;
-}
-
-.nosotros article{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} 
-
-.poco-nosotros{
-  margin:0 2rem 2rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.poco-nosotros h4{
-  margin-top: 1rem;
-}
-
-.principal-pagina{
-  margin: 2rem;
-}
-
-.principal-pagina p{
-  margin: 1rem;
-  text-align: justify;
-}
-
-.proximos-eventos{
-  margin: 2rem;
-}
-
-.proximos-eventos h2{
-  margin-bottom: 1rem;
-}
-
-.legendariomeaning{
-  color: orangered;
-}
-
-.foto-mi{
-  margin: 2rem;
-}
-
-.foto-mi img{
-  margin-bottom: 1rem;
-}
-
-/* Página contacto */
-.contacto{
-  margin: 2rem;
-}
-
-.sede{
-  margin: 1rem;
-}
-
-.sedes{
-  text-decoration: underline;
-  margin-bottom: 0.5rem;
-}
-
-.informacion_sedes{
-  padding: 0;
-  margin: 0;
-}
-
-.datos-contacto{
-  margin: 2rem;
-}
-
-footer{
+footer {
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   margin-top: auto;
-
 }
 
-footer p{
+.navbar {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  /* max-width: 1200px; */
+}
+.navbar .logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 700;
+}
+.navbar .logo-container img {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 4rem;
+}
+.navbar .offcanvas-title {
+  font-weight: 700;
+}
+.navbar .offcanvas.offcanvas-end {
+  width: 50vw;
+}
+.navbar .offcanvas {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.title .title-section {
+  margin: 2rem;
+}
+.title .title-section h1 {
+  font-size: 2rem;
+}
+.title .title-section p {
+  margin-top: 1rem;
+}
+.title .title-section .subtitulo {
+  margin-top: 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+.title .foto-principal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+.title .foto-principal img {
+  width: 70%;
+}
+
+.foto-mi {
+  margin: 2rem;
+}
+.foto-mi img {
+  margin-bottom: 1rem;
+}
+
+.nosotros {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+.nosotros h2 {
+  margin: 2rem 2rem 1rem 2rem;
+}
+.nosotros img {
+  width: 80%;
+}
+.nosotros article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nosotros .poco-nosotros {
+  margin: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.nosotros .poco-nosotros h4 {
+  margin-top: 1rem;
+}
+
+.principal-pagina {
+  margin: 2rem;
+}
+.principal-pagina .legendariomeaning {
+  color: orangered;
+}
+.principal-pagina p {
+  margin: 1rem;
+  text-align: justify;
+}
+
+.proximos-eventos {
+  margin: 2rem;
+}
+.proximos-eventos h2 {
+  margin-bottom: 1rem;
+}
+
+.pastores-valle {
+  margin-top: 2rem;
+  text-align: justify;
+}
+.pastores-valle h2 {
+  font-size: 2rem;
+  margin: 0 2rem;
+}
+.pastores-valle article {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  align-items: center;
+}
+.pastores-valle .ps-candido {
+  width: 85%;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+.pastores-valle .ps-damaris {
+  width: 85%;
+  margin-top: 1rem;
+  font-weight: 300;
+}
+.pastores-valle .pastores .info-pastor {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.pastores-valle .pastores .info-pastor .info-pastor_nombre {
+  margin: 0.5rem 0;
+}
+.pastores-valle .pastores .info-pastor .info-pastor_descripcion {
+  margin: 0.2rem 0;
+}
+
+.container-contacto .contacto {
+  margin: 2rem;
+}
+.container-contacto .contacto .sede {
+  margin: 1rem;
+}
+.container-contacto .contacto .sede .sedes {
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+.container-contacto .contacto .sede .sedes .informacion_sedes {
+  padding: 0;
+  margin: 0;
+}
+.container-contacto .datos-contacto {
+  margin: 2rem;
+}
+
+footer p {
   color: #020419;
   margin: 0 1rem 1rem 1rem;
   text-align: center;
 }
-
-.redes{
+footer .redes {
   margin-right: 1rem;
   list-style: none; /* Eliminar viñetas */
   display: flex; /* Alinear elementos horizontalmente */
   justify-content: space-between;
 }
-
-.redes img{
+footer .redes img {
   width: 2rem;
   margin: 0.6em;
 }
 
 @media (min-width: 768px) {
-  html{
+  html {
     font-size: 24px;
   }
-
-  .logo-container{
+  .logo-container {
     font-size: 0.7rem;
-    font-weight: 700; 
+    font-weight: 700;
   }
-
   .nav-item a {
     font-size: 0.7rem;
   }
-
-  .pastores-valle article{
+  .pastores-valle article {
     flex-direction: row;
     align-items: baseline;
   }
-
-  .pastores{
+  .pastores {
     margin: 1rem;
   }
-
-  .nosotros article{
+  .nosotros article {
     flex-direction: row;
     margin-right: 2rem;
   }
-
-  .poco-nosotros{
-    margin:0 0.1rem 2rem 2rem;
+  .poco-nosotros {
+    margin: 0 0.1rem 2rem 2rem;
   }
-  
-  .poco-nosotros img{
+  .poco-nosotros img {
     width: 100%;
   }
-
-  .img-legendarios{
+  .img-legendarios {
     display: flex;
     justify-content: center;
   }
-
-  .img-legendarios img{
+  .img-legendarios img {
     width: 80%;
     height: auto;
   }
-
-  .foto-mi div{
+  .foto-mi div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  .foto-mi img{
+  .foto-mi img {
     width: 80%;
     height: auto;
     margin-bottom: 1.5rem;
   }
-
-  .proximos-eventos{
+  .proximos-eventos {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .proximos-eventos img{
+  .proximos-eventos img {
     width: 80%;
     height: auto;
   }
-
-  .container-contacto{
+  .container-contacto {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  .contacto{
+  .container-contacto .contacto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .sede{
+  .container-contacto .contacto .sede {
     margin: 0 3rem 2rem 3rem;
   }
-
-  .datos-contacto{
+  .datos-contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
-  .caja-info{
+  .datos-contacto .info .caja-info {
     width: 20rem;
   }
-
-  footer{
+  footer {
     flex-direction: row;
     justify-content: space-between;
   }
-
-  footer p{
+  footer p {
     font-size: 0.7rem;
     margin-bottom: 0;
   }
-  
-  .redes img{
+  footer .redes img {
     width: 1.5rem;
   }
-
 }
 
-
-
-
+/*# sourceMappingURL=style.css.map */

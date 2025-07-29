@@ -1,0 +1,44 @@
+.pastores-valle{
+  margin-top: 2rem;
+  text-align: justify;
+
+  h2{
+    font-size: 2rem;
+    margin: 0 2rem; 
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+    align-items: center;
+  }
+
+  .ps-candido{
+    width: 85%;
+    margin-top: 1rem; 
+    font-weight: 300;
+  }
+
+  .ps-damaris{
+    width: 85%;
+    margin-top: 1rem;
+    font-weight: 300;
+  }
+
+  .pastores{
+    .info-pastor{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .info-pastor_nombre{
+            margin: 0.5rem 0;
+        }
+        .info-pastor_descripcion{
+            margin: 0.2rem 0;
+        }
+    }
+  }
+}
+

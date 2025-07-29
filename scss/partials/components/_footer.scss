@@ -1,0 +1,21 @@
+@use "../utilities/variables";
+
+footer{
+    p{
+        color: variables.$blue_oxford;
+        margin: 0 1rem 1rem 1rem;
+        text-align: center;
+    }
+
+    .redes{
+        margin-right: 1rem;
+        list-style: none; /* Eliminar viñetas */
+        display: flex; /* Alinear elementos horizontalmente */
+        justify-content: space-between;
+
+        img{
+            width: 2rem;
+            margin: 0.6em;
+        }
+    }
+}

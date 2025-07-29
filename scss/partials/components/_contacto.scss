@@ -1,0 +1,24 @@
+.container-contacto{
+    .contacto{
+    margin: 2rem;
+
+        .sede{
+            margin: 1rem;
+
+            .sedes{
+                text-decoration: underline;
+                margin-bottom: 0.5rem;
+
+                .informacion_sedes{
+                    padding: 0;
+                    margin: 0;
+                    
+                }
+            }
+        }
+    }
+
+    .datos-contacto{
+        margin: 2rem;
+    }
+}

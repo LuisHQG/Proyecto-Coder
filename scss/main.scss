@@ -1,0 +1,15 @@
+// BASE
+
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+// COMPONENTS
+@use "./partials/components/header";
+@use "./partials/components/titulo";
+@use "./partials/components/principal";
+@use "./partials/components/pastores";
+@use "./partials/components/contacto";
+@use "./partials/components/footer";
+
+// MEDIA QUERIES
+@use "./partials/components/mediaqueries"

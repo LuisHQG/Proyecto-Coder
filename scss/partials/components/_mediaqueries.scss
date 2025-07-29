@@ -1,0 +1,116 @@
+@media (min-width: 768px) {
+  html{
+    font-size: 24px;
+  }
+
+  .logo-container{
+    font-size: 0.7rem;
+    font-weight: 700; 
+  }
+
+  .nav-item a {
+    font-size: 0.7rem;
+  }
+
+  .pastores-valle article{
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .pastores{
+    margin: 1rem;
+  }
+
+  .nosotros article{
+    flex-direction: row;
+    margin-right: 2rem;
+  }
+
+  .poco-nosotros{
+    margin:0 0.1rem 2rem 2rem;
+
+    img{
+        width: 100%;
+    }
+  }
+  
+
+  .img-legendarios{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 80%;
+        height: auto;
+    }
+  }
+
+  .foto-mi{
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img{
+        width: 80%;
+        height: auto;
+        margin-bottom: 1.5rem;
+    }
+  }
+
+  .proximos-eventos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        width: 80%;
+        height: auto;
+    }
+  }
+
+  .container-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .sede{
+            margin: 0 3rem 2rem 3rem;
+        }
+    }   
+  }
+
+  .datos-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info{
+        .caja-info{
+            width: 20rem;
+        }
+    }
+  }
+
+  footer{
+    flex-direction: row;
+    justify-content: space-between;
+
+    p{
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+
+    .redes{
+        img{
+            width: 1.5rem;
+        }
+    }
+  }
+
+}

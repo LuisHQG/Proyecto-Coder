@@ -1,0 +1,55 @@
+.nosotros{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+
+  h2{
+    margin: 2rem 2rem 1rem 2rem;
+  }
+
+  img{
+    width: 80%;
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .poco-nosotros{
+    margin:0 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h4{
+        margin-top: 1rem;
+    }
+  }
+    
+}
+
+.principal-pagina{
+  margin: 2rem;
+
+  .legendariomeaning{
+    color: orangered;
+  }
+
+  p{
+    margin: 1rem;
+    text-align: justify;
+  }
+}
+
+.proximos-eventos{
+  margin: 2rem;
+
+  h2{
+    margin-bottom: 1rem;
+  }
+}
