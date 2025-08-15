@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 .navbar{
     width: 100%;
     padding: 0.5rem 1rem;
@@ -26,5 +28,13 @@
     .offcanvas{
         background-color: rgba(255, 255, 255, 0.7);
         backdrop-filter: blur(5px);
+    }
+    
+    .nav-link{
+        position: relative;
+
+        &:hover{
+            color: variables.$blue_oxford;
+        }
     }
 }

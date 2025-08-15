@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +7,8 @@
 }
 
 body{
-    background-color: #020419;
-    color: #FFFFFF;
+    background-color: variables.$blue_oxford;
+    color: variables.$p-white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -20,8 +22,8 @@ img{
 }
 
 header{
-    background-color: #FFFFFF;
-    color: #020419;
+    background-color: variables.$p-white;
+    color: variables.$blue_oxford;
     display: flex;
     justify-content: center;
     max-width: 100vw;
@@ -29,7 +31,7 @@ header{
 }
 
 footer{
-    background-color: #FFFFFF;
+    background-color: variables.$p-white;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;

@@ -64,6 +64,12 @@ footer {
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(5px);
 }
+.navbar .nav-link {
+  position: relative;
+}
+.navbar .nav-link:hover {
+  color: #020419;
+}
 
 .title .title-section {
   margin: 2rem;
@@ -222,8 +228,28 @@ footer .redes img {
     font-size: 0.7rem;
     font-weight: 700;
   }
-  .nav-item a {
+  .nav-link {
     font-size: 0.7rem;
+  }
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #020419;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-link:hover::before {
+    width: 100%;
+    visibility: visible;
+  }
+  .active::before {
+    width: 80%;
+    visibility: visible;
   }
   .pastores-valle article {
     flex-direction: row;

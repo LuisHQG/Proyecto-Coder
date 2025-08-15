@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 @media (min-width: 768px) {
   html{
     font-size: 28px;
@@ -8,8 +10,33 @@
     font-weight: 700; 
   }
 
-  .nav-item a {
+  .nav-link{
     font-size: 0.7rem;
+
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: variables.$blue_oxford;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+    }
+
+    &:hover::before{
+        width: 100%;
+        visibility: visible;
+    }
+  }
+
+  .active{
+    &::before{
+      width: 80%;
+      visibility: visible;
+    }
   }
 
   .pastores-valle article{
